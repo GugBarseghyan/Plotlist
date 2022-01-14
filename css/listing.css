@@ -1,0 +1,186 @@
+header > nav > a:nth-child(3){color:#747788}
+.about{
+    background: url(../img/heading-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 70vh;
+    height: 100vh;
+    margin-top: -16px;
+    padding:  160px 200px;
+}
+.about-text > p{ font-size: 16px; color: white; }
+.about-text > h1{
+    color: white;
+    font-size: 45px;
+    font-family: arial;
+    margin: 0px;
+}
+/* /////////////////////////////////////////////////////slides */
+.slide-parent{
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
+    background-color: white;
+    padding: 0px 200px 100px 200px;
+}
+.house{
+    background-color: #8d99af;
+    display: flex;
+    align-items: center;
+    width: 130%;
+    padding: 30px 30px;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+.house:hover{background-color: #2b2d42;}
+.house > p{
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.house-img{
+    background-color: white;
+    width: 30%;
+    padding: 19px;
+    border-radius: 50%;
+}
+.house-img > img{   width: 100%;}
+.food{
+    margin-top:20px ;
+    background-color: #8d99af;
+    display: flex;
+    align-items: center;
+    width: 130%;
+    padding: 30px 30px;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+.food:hover{background-color: #2b2d42;}
+.food > p{
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.food-img{
+    background-color: white;
+    width: 30%;
+    padding: 17px 19px;
+    border-radius: 50%;
+}
+.food-img > img{ width: 100%;}
+.car{
+    margin-top: 20px;
+    background-color: #8d99af;
+    display: flex;
+    align-items: center;
+    width: 130%;
+    padding: 30px 30px;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+.car:hover{background-color: #2b2d42;}
+.car > p{
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.car-img{
+    background-color: white;
+    width: 30%;
+    padding: 20px 15px;
+    border-radius: 50%;
+}
+.car-img > img{width: 100%;}
+.traveling{
+    margin-top: 20px;
+    background-color: #8d99af;
+    display: flex;
+    align-items: center;
+    width: 130%;
+    padding: 30px 30px;
+    border-radius: 6px;
+    transition: 0.4s;
+}
+.traveling:hover{
+    background-color: #2b2d42;
+}
+.traveling > p{
+    color: white;
+    font-size: 17px;
+    margin-left: 10px;
+}
+.traveling-img{
+    background-color: white;
+    width: 30%;
+    padding: 19px 19px;
+    border-radius: 50%;
+}
+.traveling-img > img{width: 100%;}
+/* //////////////////////////////////////////slides///////////////////// */
+.div-slides{
+    display: none;
+    flex-direction: column;
+}
+#tab1{display: flex;}
+.slide1{
+    display: flex;
+    margin-left: 100px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.slide1-img1{width: 60%;}
+.slide1-img1 > img{width: 100%;}
+.slide1-text{ padding-left: 40px;}
+.slide1-text > p{ color: #747888;}
+.slide1-text > p > span{color: black;}
+/* ////////////////////////////////responsive/////////////////////// */
+@media only screen and (max-width:1300px) {
+    .about{height: 50%;}
+    .slide-parent{ padding: 50px 170px}
+}
+@media only screen and (max-width:1150px) {
+    .about{
+        background-size: 100% 100%;
+        padding: 150px 190px ;
+    }
+    .slide-parent{padding: 50px 190px}
+}
+@media only screen and (max-width:1150px) {
+    .about{
+        background-size: 100% 100%;
+        padding: 150px 140px ;
+    }
+    .slide-parent{padding: 50px 140px}
+}
+@media only screen and (max-width:950px) {
+    .about{
+        background-size: 100% 100%;
+        padding: 150px 80px ;
+    }
+    .slide-parent{
+        padding: 50px 80px;
+        flex-direction: row;
+    } 
+}
+@media only screen and (max-width:812px) {
+    .about{
+        background-size: 100% 100%;
+        padding: 150px 50px ;
+    }
+    .slide-parent{
+        padding: 50px 50px;
+        flex-direction: row;
+    } 
+}
+@media only screen and (max-width:700px) {
+    .about{
+        background-size: 100% 100%;
+        padding: 150px 30px ;
+    }
+    .slide-parent{
+        padding: 50px 30px;
+        flex-direction: row;
+    } 
+}

@@ -1,0 +1,67 @@
+*{ box-sizing: border-box; }
+body{
+    margin: 0;
+    font-family:monospace;
+}
+header{
+    border-bottom: 2px solid #747888;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    position: fixed;
+    background-color: #0000;
+    transition: 0.4s;
+    width: 100%;
+    top:0;
+    left:0;
+    flex-wrap: wrap;
+}
+header img{width: 150px;}
+header nav a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: 0px 20px;
+    letter-spacing: 2px;
+}
+header nav a:hover{color: #747888;}
+/*------------- After Scrolling Nav Menu ---------------------*/
+.changedheader{ background-color: #000b; box-shadow: 0px 0px 5px black; 
+    padding: 10px 200px;}
+/*------------- Scrolling styles end -----------*/
+/*---------------- Footer ----------------*/
+footer{
+    background-color: white;
+    width: 100%;
+    padding: 50px 200px;
+    border-top: 2px solid #747888;
+}
+footer .selections{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+footer .selections .object{ width: 300px; margin: 20px; text-align: center;}
+footer .selections .object h1{ color: #747888; }
+footer a{ text-decoration: none; color: #747888; }
+footer a:hover{ text-decoration: underline; }
+footer .copyright{
+    text-align: center;
+    border-top: 2px solid #747888;
+    padding: 20px
+}
+@media only screen and (max-width: 1100px){
+    header, footer{ padding: 20px 100px; }
+}
+@media only screen and (max-width: 800px){
+    header, footer{ padding: 20px 50px;}
+    footer .selections{ flex-wrap: wrap; text-align: center;}
+}
+@media only screen and (max-width: 600px){
+    header{ justify-content: center;}
+    header nav{ width: 100%; padding: 10px; text-align: center;}
+    header img{ width: 130px;}
+}
